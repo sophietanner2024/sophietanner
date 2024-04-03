@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+    .left-right {
+        position: left;
+        left: 50px;
+     }
+     
+     .right-left {
+        position: left;
+        right: 50px;
+     }
+    
+     .content-box {
+        width: 240px;
+        height: 60px;
+        background-color: blue;
+        padding: 20px;
+     }
+
+     .content-before {
+        font-size: 22px;
+        font-family: arial;
+        color: #fff;
+        text-align: center; 
+
+     }
+
+     .content-after {
+        display: none;
+        font-size: 14px;
+        font-family: arial;
+        color: #fff;
+        text-align: left;
+        line-height: 16px;
+        opacity: 0;
+     }
+
+</style>
+
+<title></title>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $(".content-box").click(function() {
+            $(".content-box").animate({
+                width: '500px',
+                height: '+=200px'
+                }, 1000);
+                $("content-after").show().animate(opacity); 
+            });
+
+    </script>
+</head>
+<body>
+
+    <button class="content-box">click here</button>
+
+    <p>hello world</p>
+
+</body>
+</html>

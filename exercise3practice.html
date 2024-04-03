@@ -1,0 +1,23 @@
+<html>
+<head>
+
+<script type="text/javascript" src="practice/jquery.js">
+</script>
+<script type="text/javascript">
+    $("document").ready(function(){
+      var obj={NO1: 129000, N02: 245000, N03: 215000, N04: 175000, N05: 345000}
+      $.each(obj,function(i,val){
+        $("#"+i).append( document.createTextNode("Property "+i+" asking pricing "+val));
+      });
+    });
+
+</script>
+</head>
+
+<body>
+<h1>looping over objects with $.each()</h1>    
+<div id="N01"> </div>
+<div id="N02"> </div>
+
+    </body>
+</html>

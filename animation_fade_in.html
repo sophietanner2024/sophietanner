@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button1").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("fast");
+    $("#div3").fadeIn(3000);
+  });
+   $("button2").ready(function(){ 
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("fast");
+    $("#div3").fadeOut(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Here are my fade in selecters</p>
+
+<br><button>Click to see the boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:rgb(205, 177, 177);"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:rgb(158, 196, 158);"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:rgb(120, 120, 157);"></div>
+
+<br><button>Click to fade out boxes</button><br><br>
+
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:rgb(205, 177, 177);"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:rgb(158, 196, 158);"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:rgb(120, 120, 157);"></div>
+
+
+</body>
+</html>
+
